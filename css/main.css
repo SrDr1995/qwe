@@ -1,0 +1,347 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1300px;
+    padding: 0;
+    margin: auto;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px 0;
+}
+header{
+    background-image:url(./img/Leaf.png),url(./img/Pasta.png),url(./img/Tomato.png),url(./img/Leaf2.png),url(./img/RectangleLeft.png), url(./img/RectangleRight.png);
+    background-position: 100px 170px,700px 170px,700px 700px,1250px 680px,right bottom, left top;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+    height: 825px;
+    width: 100%;
+    margin: auto;
+}
+.number{
+    display: flex;
+    align-items: center
+}
+.number-text{
+    font-size: 10px;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+p{
+    margin: 0;
+}
+.tfnum{
+    font-size: 18px;
+}
+.num-img{
+    display: inline-block;
+    height: 60px;
+    width: 35px;
+}
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.list-item{
+    margin-left: 80px;
+}
+li{
+    list-style-type: none;
+}
+.list-item a{
+    text-decoration: none;
+    color: black;
+}
+.list-item a:hover{
+    color: rgb(255, 255, 255);
+    -moz-text-shadow:0 0 10px rgb(250, 245, 245);
+    -webkit-text-shadow:0 0 10px rgb(255, 255, 255);
+    text-shadow:0 0 10px rgb(0, 0, 0);
+}
+nav{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+ul{
+    padding: 0;
+}
+.content{
+    display: flex;
+    position: relative;
+}
+.content-image{
+    position: absolute;
+    margin-left: 650px;
+}
+.content-text{
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.first{
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+.second{
+    margin: 10px 0 10px 0;
+    font-size: 70px;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 300;
+}
+.content-text-three{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+.text-in{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.texs-in-first{
+    font-size: 18px;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 400;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.text-in-second{
+    font-size: 50px;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 400;
+}
+.plate{
+    margin-top: 40px;
+}
+.btn{
+    margin-top: 40px;
+    justify-content: center;
+}
+.main-btn{
+    font-size: 18px;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: transparent;
+    border: 2px solid black;
+}
+.main-btn:hover{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background: black;
+}
+.side-spaghetti{
+    margin-top: -70px;
+}
+.left{
+    justify-content: flex-end;
+}
+.head-text{
+    text-align: center;
+    margin-top: 70px;
+}
+.head-text-large{
+    font-size: 50px;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.head-text-small{
+    font-size: 16px;
+    width: 1100px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.group_1 {
+    background-image: url(./img/Rectangle.png);
+    background-size: 1300px 100px;
+    background-position: bottom 350px center;
+
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.card-content {
+  width: 33%;
+}
+
+figcaption{
+    text-align: center;
+    max-width: 400px; 
+    margin: auto;
+}
+.large .small{
+    margin-top: 20px;
+}
+.large{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.small{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.cont{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 40px;
+    border: none;
+    background-color: yellow;
+}
+.cont:hover{
+    background-color: black;
+    color: #fff;
+}
+.head-group2-text{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 150px;
+}
+.head-group2-text-small{
+    font-size: 16px;
+    width: 1100px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+.head-group2-text-bold{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.head-text-large{
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.head-group2-content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.photo-cont-act{
+    position: absolute;
+    left: 27%;
+    top: 2000px;
+}
+.dot-selector{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+.dot{
+    height: 17px;
+    width: 17px;
+    background-color: gray;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+.dot-active{
+    height: 17px;
+    width: 17px;
+    background-color: rgb(255, 230, 0);
+    border-radius: 100%;
+    margin-left: 5px;
+}
+.group3-images{
+    margin-top: 150px;
+    display: flex;
+}
+.image-right{
+    margin-left: 32px;
+}
+.image-right-top{
+    margin-bottom: 32px;
+}
+.group4-text{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.group4-cont-input{
+    display: flex;
+    justify-content: center;
+}
+#name, #data, #people, #emale, #time{
+    height: 40px;
+    width: 300px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+.group4-left{
+    margin-right: 10px;
+}
+.group4-right{
+    margin-left: 10px;
+}
+.group4-btn{
+    height: 45px;
+    width: 325px;
+    background: yellow;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    padding: 0;
+}
+.group4-btn:hover{
+    color: rgb(255, 255, 255);
+    background: black;
+}
+button{
+    cursor: pointer;
+}
+footer{
+    margin-top: 100px;
+    background-image: url(img/BGImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    height: 570px;
+}
+.footer-cont{
+    padding-top: 50px;
+}
+.footer-text{
+    width: 30%;
+    margin-top: 50px;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+.footer-text-copyrite{
+    width: 30%;
+    margin-top: 200px;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+

@@ -645,8 +645,8 @@ footer{
     .photo-cont-act{
         width: 340px;
         height: 230px;
-        top:2420px;
-        left: 5px;
+        display: block;
+        position: static;
     }
     .head-group2-text{
         margin-top: 50px;

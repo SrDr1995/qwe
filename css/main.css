@@ -179,6 +179,11 @@ ul{
 .card-content {
   width: 33%;
 }
+.card-image{
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+}
 
 figcaption{
     text-align: center;
@@ -241,12 +246,14 @@ figcaption{
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 .photo-cont-act{
     position: absolute;
-    left: 27%;
-    top: 2000px;
-}
+    left: 24.5%;
+    top: 2020px;
+} 
 .dot-selector{
     display: flex;
     margin-top: 100px;
@@ -269,6 +276,45 @@ figcaption{
 .group3-images{
     margin-top: 150px;
     display: flex;
+}
+.image-left{
+    position: relative;
+}
+.img-text-left{
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color:#fff;
+    width: 70%;
+}
+.image-right-top{
+    position: relative;
+}
+.image-right-bottom{
+    position: relative;
+}
+.img-text-right-top{
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color:#fff;
+    width: 50%;
+}
+.img-text-right-bot{
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color:#fff;
+    width: 50%;
 }
 .image-right{
     margin-left: 32px;
@@ -328,8 +374,11 @@ footer{
 .footer-cont{
     padding-top: 50px;
 }
+.footer-cont-left{
+    width: 50%;
+}
 .footer-text{
-    width: 30%;
+    width: 70%;
     margin-top: 50px;
     color:#fff;
     font-family: 'Montserrat', sans-serif;
@@ -337,11 +386,356 @@ footer{
     font-weight: 200;
 }
 .footer-text-copyrite{
-    width: 30%;
+    width: 70%;
     margin-top: 200px;
     color:#fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 200;
+}
+.footer-cont{
+    display: flex;
+}
+.figure-top-icon{
+    display: flex;
+}
+.cont-right-top{
+    padding-top: 100px;
+}
+.figcaption-top-text{
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 15px;
+}
+.cont-right-bottom{
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    left:400px;
+}
+.cont-right-bottom img{
+    margin-left: 5px;
+}
+.footer-cont-right{
+    position: relative;
+}
+
+/*hamburger menu start*/
+#menu__toggle {
+    opacity: 0;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 30;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #daaf15b2;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 10;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #0d0d0d;
+    color: #fff;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+/*hamburger menu end*/ 
+.hamburger-menu{
+    display: none;
+}
+
+
+
+@media(min-width: 780px) and (max-width:960px){
+    .wrapper{
+        width: 780px;
+        padding: 0;
+        margin: auto;
+    }
+    .content{
+        justify-content: center;
+    }
+    .content-image{
+        display: none;
+    }
+    .nav{
+        justify-content: center;
+    }
+    .container1{
+        justify-content: space-around;
+    }
+    .card-image{
+        width: 200px;
+        height: 200px;
+    }
+    .head-text-small{
+        width: 70%;
+    }
+    .large{
+        font-size: 13px;
+    }
+    .small{
+        font-size: 10px;
+    }
+    .cont{
+        font-size: 12px;
+    }
+    .head-group2-text-small{
+        width: 70%;
+    }
+    .photo-cont{
+        width:204px;
+        height: 151px;
+    }
+    .head-group2-content{
+        justify-content: space-around;
+    }
+    .photo-cont-act{
+        width: 298px;
+        height: 231px;
+        top:1860px;
+        left:240px;
+    }
+    .group3-images{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .image-left{
+        margin-left: 31px;
+    }
+    .image-right-top{
+        margin-bottom: 0;
+    }
+    .cont-right-bottom{
+        left: 100px;
+    }
+    .footer-cont-left{
+        margin-left: 20px;
+    }
+}  
+
+@media(min-width:350px) and (max-width:780px){
+    .wrapper{
+        width: 350px;
+        padding: 0;
+        margin: auto;
+    }
+    .logo a img{
+        width: 151px;
+        height: 37px;
+    }
+    .number-image img{
+        width: 15px;
+        height: 20px;
+    }
+    .number-text{
+        font-size: 10px;
+    }
+    .tfnum{
+        font-size: 10px;
+    }
+    .container1{
+        justify-content: space-around;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .side-spaghetti{
+        width: 150px;
+        height: 350px;
+        margin-top: -25px;
+    }
+    .head-text-large{
+        font-size: 30px;
+    }
+    .head-text-small{
+        width: 70%;
+        font-size: 10px;
+    }
+    .card-image{
+        width: 200px;
+        height: 200px;
+        margin-left: 35px;
+    }
+    .card-content{
+        display: contents;
+    }
+    .card{
+        flex-wrap: wrap;
+    }
+    .large{
+        font-size: 15px;
+    }
+    .small{
+        font-size: 10px;
+    }
+    .cont{
+        font-size: 15px;
+    }
+    .photo-cont{
+        display: none;
+    }
+    .photo-cont-act{
+        width: 340px;
+        height: 230px;
+        top:2420px;
+        left: 5px;
+    }
+    .head-group2-text{
+        margin-top: 50px;
+    }
+    .head-group2-text-small{
+        font-size: 10px;
+        width: 70%;
+    }
+    .dot{
+        width: 7px;
+        height: 7px;
+    }
+    .dot-active{
+        width: 7px;
+        height: 7px;
+    }
+    .dot-selector{
+        margin-top: 30px;
+    }
+    .image-left img{
+        width: 300px;
+        height: 100px;
+    }
+    .image-right img{
+        width: 300px;
+        height: 100px;
+    }
+    .group3-images{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .img-text-left{
+        font-size: 23px;
+    }
+    .img-text-right-top{
+        font-size: 23px;
+    }
+    .img-text-right-bot{
+        font-size: 23px;
+    }
+    .image-right{
+        margin: 0;
+    }
+    .image-right-top{
+        margin: 0;
+    }
+    .group4-cont-input{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .group4-right{
+        margin-left: 0;
+    }
+    .group4-left{
+        margin-right: 0;
+    }
+    form{
+        width: 250px;
+    }
+    .group4-btn{
+        width: 200px;
+    }
+    .logo2{
+        width: 100px;
+        height: 15px;
+    }
+    .cont-right-bottom{
+        top:100px;
+        left:60px;
+        width: 100px;
+        height: 15px;
+    }
+    .figure-top-icon{
+        width: 90px;
+        height: 15px;
+    }
+    footer{
+        height: 270px;
+    }
+    .cont-right-top{
+        margin: 0;
+    }
+    .figcaption-top-text{
+        font-size: 7px;
+    }
+    .footer-text{
+        font-size: 7px;
+    }
+    .footer-text-copyrite{
+        padding-top: 10px;
+        font-size: 7px;
+    }
+    .plate{
+        display: none;
+    }
 }
 

@@ -444,7 +444,7 @@ footer{
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #616161;
+  background-color: #000000;
 }
 .menu__btn > span::before {
   content: '';
@@ -466,7 +466,7 @@ footer{
     padding: 80px 0;
     list-style: none;
     text-align: center;
-    background-color: #daaf15b2;
+    background-color: #00000086;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     z-index: 10;
   }
@@ -497,6 +497,11 @@ footer{
   #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
+  }
+  .burger-div{
+    margin: 200px 20px 0 20px;
+    background-color: rgb(255, 208, 0);
+    border-radius: 20px;
   }
 /*hamburger menu end*/ 
 .hamburger-menu{
@@ -723,6 +728,7 @@ footer{
     }
     .cont-right-top{
         margin: 0;
+        padding: 0;
     }
     .figcaption-top-text{
         font-size: 7px;
@@ -731,7 +737,7 @@ footer{
         font-size: 7px;
     }
     .footer-text-copyrite{
-        padding-top: 10px;
+        margin-top: 10px;
         font-size: 7px;
     }
     .plate{
